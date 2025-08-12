@@ -1,0 +1,83 @@
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', 'Helvetica Neue', sans-serif;
+  background: linear-gradient(135deg, #74ebd5, #acb6e5);
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.principal {
+  background: rgba(255, 255, 255, 0.15);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 20px;
+  backdrop-filter: blur(15px);
+  -webkit-backdrop-filter: blur(15px);
+  padding: 40px 30px;
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  width: 90%;
+  max-width: 420px;
+  animation: fadeIn 0.7s ease-out;
+}
+
+
+@keyframes fadeIn {
+  from {
+    transform: translateY(20px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+
+.notasE {
+  font-size: 2rem;
+  color: #ffffff;
+  margin-bottom: 30px;
+  font-weight: bold;
+}
+
+.evento {
+  width: 100%;
+  padding: 14px;
+  margin: 10px 0;
+  font-size: 1rem;
+  font-weight: bold;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+}
+
+
+.evento-addEventListener {
+  background: linear-gradient(135deg, #00b894, #00cec9);
+}
+
+.evento-addEventListener:hover {
+  background: linear-gradient(135deg, #009874, #00b0af);
+  transform: translateY(-2px);
+}
+
+
+.evento-propiedad {
+  background: linear-gradient(135deg, #fd79a8, #fab1a0);
+}
+
+.evento-propiedad:hover {
+  background: linear-gradient(135deg, #e0568d, #f09880);
+  transform: translateY(-2px);
+}
+
+
+

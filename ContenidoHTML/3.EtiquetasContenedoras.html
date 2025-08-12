@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Página Web</title>
+</head>
+<body>
+    <!--Etiquetas contenedoras-->
+    <header class="header" id="header" style="background-color: lightcoral;
+     border: 2px solid black;
+     font-size: 22px;
+     font-family: 'Courier New', Courier, monospace;
+     text-align: center;
+     border-radius: 2%;">
+        <h1 class="titulo" id="titulo">Noticias</h1>
+        <nav class="navegacion" id="navegacion">
+            <!--ul>li*3>a-->
+            <ul class="lista" id="lista">
+                <li><a href="#seccion1">Deportes</a></li>
+                <li><a href="#seccion2">Ciencia</a></li>
+                <li><a href="#seccion3">Programación</a></li>
+                <li><a href="../others/pag.html">Buenas Prácticas</a></li>
+                <li><a href="https://www.google.com">Google</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="seccion seccion1" id="seccion1">
+             <h2>Deportes</h2>
+            <article class="articulo articulo1">
+               <h3>El PSG Pedió ante el Chelsea</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae, perspiciatis necessitatibus odio distinctio ex alias harum facere quo magnam! Molestiae iusto doloremque ullam incidunt nemo. Numquam doloremque corporis quisquam quasi.
+                Numquam vero, officiis id commodi adipisci quis alias maxime aliquam eaque deserunt sed eum ipsum laudantium odit doloribus quam ducimus repudiandae in at vitae! Quaerat blanditiis vel fugiat incidunt provident.</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores repellendus, voluptates veritatis sed inventore corporis minima ea non nobis earum qui ab ipsam ipsa ut? Debitis aliquid asperiores magni ut!</p>
+            </article>
+        </section>
+        <section class="seccion seccion2" id="seccion2">
+            <h2>Ciencia</h2>
+            <article>
+                <h3>La vacuna contra la rabia</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel nobis, vitae officiis velit vero nisi libero consectetur ipsa eaque doloremque error eligendi accusamus veniam aperiam voluptates, praesentium natus eveniet fuga?</p>
+                <h3>Covid22</h3>
+                <hr>
+                <p><small>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum, quia sunt ullam maiores veritatis dicta aut iste eligendi temporibus amet accusamus, tempora nulla. Fuga sequi, perspiciatis sint architecto est debitis?</small></p>
+            </article>
+        </section>
+        <section class="seccion seccion3" id="seccion3">
+            <h2><b>Programación</b></h2>
+            <article>
+                <h3><strong><u>C# el duro</u><i> para los Vídeo Juegos</i></strong></h3>
+                <p><em> Lorem ipsum dolor,</em> sit amet consectetur adipisicing elit. Nostrum fugiat architecto qui consectetur inventore. Explicabo, iste mollitia! Laboriosam quisquam repellat, hic natus, maiores magni culpa repellendus minus fugiat nisi nam!</p>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Deserunt voluptatum quasi odio minima amet praesentium officiis repudiandae officia magni iste doloribus nobis reiciendis magnam quo laborum, delectus, ab placeat. Assumenda!</p>
+                <p>
+                      const calculetePower = (num1) =>{
+                                return Math.pow(num1,2)
+                            } 
+                </p><br>
+                <figure>
+                    <code>
+                        <pre>
+                              const calculetePower = (num1) =>{
+                                return Math.pow(num1,2)
+                            }
+                        </pre>
+                    </code>
+                    <figcaption>Función tipo flecha de JS que calcula el cuadrado de un número</figcaption>
+                </figure>
+            </article>
+        </section>
+        <form action="">
+            <label for="correo">Introduzca el Correo:</label>
+            <input type="email" name="correo" id="correo" required placeholder="Ingrese su correo electrónico">
+            <button type="submit">Enviar</button>
+        </form>
+    </main>
+    <footer>
+        <p>Todos los derechos de autor son reservados 2025 UE</p>
+    </footer>
+    
+</body>
+</html>

@@ -1,0 +1,21 @@
+/*Estos son comentarios*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.seccion, div{
+    padding: 2%;
+    font-size: 18px;
+}
+.seccion1{
+    background: yellow;
+}
+
+.seccion1, div{
+    background: lightblue;
+}
+.reloj{
+    border: 2px solid black;
+    padding: 4px 10px 50px;
+}

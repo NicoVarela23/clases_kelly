@@ -1,27 +1,28 @@
 <app-header></app-header>
-<main class="container-fluid container">
+<main>
   <section class="interpolar">
-    <p>
-      La interpolacion de datos: Se declaran proiedades o atributos y mediante el doble mostachos se coloca el valos:
-    </p>
-    <p>
-      {{getData()}}
-    </p>
+    <p>La interpolación de datos: se declaran propiedades o atributos y mediante
+      el dobre llave (mostacho) de coloca el valor</p>
+    <p><b>{{getData()}}</b></p>
   </section>
+ 
   <section class="propiedad">
-    <p>
-      Se tranfieren valores a los atributos de las etiquetas en el template.
-    </p>
+    <p>Se pasa valores a los atirbutos de las etiquetas en el template</p>
     <label for="edad">Edad:</label>
-    <input type="number" name="edad" id="edad" [value]="edad">
+    <input type="number" name="" id="edad" [value]="edad"> <!--el corchere es para indicar que se va a apsar el valor desde la lógica DOm-->
   </section>
-  <section>
+ 
+  <section class="Evento-click">
     <button (click)="getEvento()">Evento Click</button>
   </section>
+ 
   <div>
     <label for="name">Nombre:</label>
     <input type="text" name="name" id="name" [(ngModel)]="nombre"><br>
     <p>{{nombre}}</p>
   </div>
 </main>
+ 
 <app-footer></app-footer>
+<router-outlet />
+ 

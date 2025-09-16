@@ -1,0 +1,42 @@
+/* Footer minimalista y elegante */
+footer {
+  /* Fondo casi negro para una apariencia elegante */
+  background: #121212; 
+  /* Borde superior sutil con un gris muy claro */
+  border-top: 1px solid #333333; 
+  padding: 3rem 1.5rem;
+  text-align: center;
+  margin-top: auto;
+  color: #e0e0e0; /* Color de texto claro para contraste */
+  /* Transición suave para cualquier cambio de color */
+  transition: background-color 0.3s ease; 
+}
+
+/* Contenido del footer */
+footer p {
+  color: #b0b0b0; /* Un gris más suave para el texto */
+  font-size: 1rem;
+  margin: 0;
+  font-weight: 400; /* Peso de la fuente más ligero para un look minimalista */
+  line-height: 1.5;
+}
+
+/* Enlaces del footer, si existen */
+footer a {
+  color: #888888;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+/* Efecto hover sutil en los enlaces */
+footer a:hover {
+  color: #ffffff;
+  text-decoration: underline;
+}
+
+/* Responsive del footer */
+@media (max-width: 768px) {
+  footer {
+    padding: 2rem 1rem;
+  }
+}

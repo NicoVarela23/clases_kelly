@@ -1,40 +1,36 @@
 import { Component, signal } from '@angular/core';
-import {Header} from './header/header';
-import {Footer} from './footer/footer';
-import {CommonModule} from '@angular/common';
-import {FormsModule} from '@angular/forms';
+import { RouterOutlet } from '@angular/router';
+import { Footer } from './footer/footer';
+import { Header } from './header/header';
+import { CommonModule } from '@angular/common';
+import { FormsModule } from '@angular/forms';
 
 @Component({
   selector: 'app-root',
-  imports: [
+  imports: [RouterOutlet,
     CommonModule,
     FormsModule,
-    Header, Footer],
+    Footer,
+    Header
+
+  ],
   templateUrl: './app.html',
   styleUrl: './app.css'
 })
 export class App {
-  protected title:string = 'Formas de enlazar datos.';
-  private data:string="Esto es una interpolacion.";
-  public edad:number=18;
-  protected nombre:string="Holman";
-
+  protected tittle:string = "formas de enlazar datos";
+  private data:string = "esto es una interpolación";
+  public edad:number = 18;
+  protected nombre:string="Holtman"
+ 
   //Metodo de acceso
   public getData():string{
-    return this.data;
+    return this.data; //this data se usa para acceder a los atributos de la clase
   }
-
-  public getEdad():number{
-    return this.edad;
-  }
-
-  public getNombre():string{
-    return this.nombre;
-  }
-
-  //Metodo de orden
-  public getEvento():void{
-    alert("Soy Click.");
-
+ 
+  //metodo de orden
+  public getEvento():void{ //void no retorna nada
+    alert("Soy click");
   }
 }
+ 

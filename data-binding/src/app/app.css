@@ -1,0 +1,60 @@
+/* Estilos modernos de contenedor y diseño */
+main {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem;
+  min-height: calc(100vh - 160px);
+  /* Fondo oscuro sólido para un tema profesional */
+  background: #1e1e1e;
+  color: #f0f0f0; /* Color de texto claro para alto contraste */
+}
+
+/* Hermoso estilo de secciones con tarjetas modernas */
+section {
+  /* Fondo más oscuro, casi negro, para las tarjetas */
+  background: #282828;
+  border: 1px solid #333333;
+  border-radius: 12px;
+  padding: 1.5rem;
+  margin-bottom: 1.5rem;
+  min-height: 120px;
+  /* Sombra sutil para un efecto de elevación minimalista */
+  box-shadow: 0 4px 8px rgba(255, 255, 255, 0.2); 
+  transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+section:hover {
+  transform: translateY(-5px);
+  /* Sombra más pronunciada en hover */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4); 
+}
+
+/* Tipografía mejorada */
+section p {
+  margin-bottom: 0.5rem;
+  color: #a0a0a0;
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+section p b {
+  color: #ffffff;
+  font-weight: 600;
+  background: none;
+  -webkit-background-clip: unset;
+  -webkit-text-fill-color: unset;
+  background-clip: unset;
+}
+
+/* Títulos de sección */
+section h2 {
+    color: #ffffff;
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+}

@@ -1,0 +1,72 @@
+/* Header sutil y moderno */
+header {
+  /* Fondo gris claro para una apariencia limpia */
+  background: #f8f9fa; 
+  color: #343a40; /* Color de texto oscuro para alto contraste */
+  padding: 1.5rem 2rem;
+  /* Sombra suave para un efecto de elevación sutil */
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05); 
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  /* Transición suave para cualquier cambio */
+  transition: background-color 0.3s ease, box-shadow 0.3s ease; 
+}
+
+/* Contenedor para el contenido principal del header */
+.header-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Título principal del header */
+header h1 {
+  font-size: 1.8rem;
+  font-weight: 700;
+  margin: 0;
+  letter-spacing: -0.5px;
+  color: #212529; /* Color de texto más oscuro para el título */
+}
+
+/* Subtítulo o eslogan */
+header p {
+  font-size: 1rem;
+  margin: 0;
+  color: #6c757d;
+  font-weight: 400;
+}
+
+/* Efecto de línea inferior sutil al título */
+header h1::after {
+  content: '';
+  display: block;
+  width: 50px;
+  height: 2px;
+  background-color: #000000; /* Un toque de color para destacar */
+  margin-top: 0.5rem;
+  transition: width 0.3s ease;
+}
+
+/* Hover en el título para una interacción sutil */
+header h1:hover::after {
+  width: 80px;
+}
+
+/* Responsive del header */
+@media (max-width: 768px) {
+  header {
+    padding: 1rem 1rem;
+  }
+
+  .header-content {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  header p {
+    margin-top: 0.5rem;
+  }
+}
